@@ -8306,19 +8306,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\erika\\.nuget\\packages\\": {}
+    "C:\\Users\\LMartinez\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\erika\\source\\repos\\Desafio3_Recetas(Ultimo)\\GestionRecetas\\GestionRecetas.csproj",
+      "projectUniqueName": "C:\\Users\\LMartinez\\Downloads\\Desafio3_Recetas\\GestionRecetas\\GestionRecetas.csproj",
       "projectName": "GestionRecetas",
-      "projectPath": "C:\\Users\\erika\\source\\repos\\Desafio3_Recetas(Ultimo)\\GestionRecetas\\GestionRecetas.csproj",
-      "packagesPath": "C:\\Users\\erika\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\erika\\source\\repos\\Desafio3_Recetas(Ultimo)\\GestionRecetas\\obj\\",
+      "projectPath": "C:\\Users\\LMartinez\\Downloads\\Desafio3_Recetas\\GestionRecetas\\GestionRecetas.csproj",
+      "packagesPath": "C:\\Users\\LMartinez\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LMartinez\\Downloads\\Desafio3_Recetas\\GestionRecetas\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\erika\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LMartinez\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8326,7 +8326,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8396,7 +8395,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
