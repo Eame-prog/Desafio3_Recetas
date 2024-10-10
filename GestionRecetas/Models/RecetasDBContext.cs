@@ -18,6 +18,7 @@ namespace GestionRecetas.Models
         protected override void OnModelCreating(ModelBuilder modelbuilder)
         {
             modelbuilder.SeedUsuario_Roles();
+            modelbuilder.ApplyConfiguration(new RecetasSeed());
             base.OnModelCreating(modelbuilder);
         }
     }

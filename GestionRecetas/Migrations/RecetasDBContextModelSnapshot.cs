@@ -172,17 +172,17 @@ namespace GestionRecetas.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "ab3e9cda-d416-4857-a684-b1e9b9ca1dea",
+                            Id = "9c2c1aa1-b86a-4462-b83f-9eb84562f740",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "14776b9c-a0c3-4e71-8b18-223a2cc36c82",
+                            ConcurrencyStamp = "f4141e7b-89d1-4ea0-abde-2562d818670b",
                             Email = "admin@hotmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@HOTMAIL.COM",
                             NormalizedUserName = "ADMIN@HOTMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIWjUylj3oMvUkgOnjX/eGXi1uL2QAJDSdgaPoK3zVndHQV8y4DPjsEuxNHmlBucGg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEDi+gWRW2diy+UNNV7r3az0NWmqHVyJCVxGYBSN9/1cpPRgKD8+fb6CNKIO3V2eKPw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "e1e08107-f2f1-42f6-b819-af5489ead0da",
+                            SecurityStamp = "d17091f8-8b56-4305-9d74-9b6e152d8ff3",
                             TwoFactorEnabled = false,
                             UserName = "admin@hotmail.com"
                         });
@@ -217,13 +217,13 @@ namespace GestionRecetas.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "5a62ede7-8beb-4a2e-b818-9c376b9690ef",
+                            Id = "151f3cc7-45d0-4755-892a-d83a279cdd1a",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "f1e7d475-0ad5-40ae-bfb9-9ea47a6c4b82",
+                            Id = "10eed190-8f05-4a24-b674-3a407fd8d1d2",
                             Name = "Usuario",
                             NormalizedName = "USUARIO"
                         });
@@ -318,8 +318,8 @@ namespace GestionRecetas.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "ab3e9cda-d416-4857-a684-b1e9b9ca1dea",
-                            RoleId = "5a62ede7-8beb-4a2e-b818-9c376b9690ef"
+                            UserId = "9c2c1aa1-b86a-4462-b83f-9eb84562f740",
+                            RoleId = "151f3cc7-45d0-4755-892a-d83a279cdd1a"
                         });
                 });
 
