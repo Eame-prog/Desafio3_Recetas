@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Belen\\Source\\Repos\\Desafio3_Recetas\\GestionRecetas\\GestionRecetas.csproj": {}
+    "C:\\Users\\erika\\Downloads\\Desafio3_Recetas-main (1)\\Desafio3_Recetas-main\\GestionRecetas\\GestionRecetas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Belen\\Source\\Repos\\Desafio3_Recetas\\GestionRecetas\\GestionRecetas.csproj": {
+    "C:\\Users\\erika\\Downloads\\Desafio3_Recetas-main (1)\\Desafio3_Recetas-main\\GestionRecetas\\GestionRecetas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Belen\\Source\\Repos\\Desafio3_Recetas\\GestionRecetas\\GestionRecetas.csproj",
+        "projectUniqueName": "C:\\Users\\erika\\Downloads\\Desafio3_Recetas-main (1)\\Desafio3_Recetas-main\\GestionRecetas\\GestionRecetas.csproj",
         "projectName": "GestionRecetas",
-        "projectPath": "C:\\Users\\Belen\\Source\\Repos\\Desafio3_Recetas\\GestionRecetas\\GestionRecetas.csproj",
-        "packagesPath": "C:\\Users\\Belen\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Belen\\Source\\Repos\\Desafio3_Recetas\\GestionRecetas\\obj\\",
+        "projectPath": "C:\\Users\\erika\\Downloads\\Desafio3_Recetas-main (1)\\Desafio3_Recetas-main\\GestionRecetas\\GestionRecetas.csproj",
+        "packagesPath": "C:\\Users\\erika\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\erika\\Downloads\\Desafio3_Recetas-main (1)\\Desafio3_Recetas-main\\GestionRecetas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Belen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\erika\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
