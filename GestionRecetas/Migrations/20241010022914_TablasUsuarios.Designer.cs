@@ -4,6 +4,7 @@ using GestionRecetas.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GestionRecetas.Migrations
 {
     [DbContext(typeof(RecetasDBContext))]
-    partial class RecetasDBContextModelSnapshot : ModelSnapshot
+    [Migration("20241010022914_TablasUsuarios")]
+    partial class TablasUsuarios
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -168,24 +171,6 @@ namespace GestionRecetas.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "ab3e9cda-d416-4857-a684-b1e9b9ca1dea",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "14776b9c-a0c3-4e71-8b18-223a2cc36c82",
-                            Email = "admin@hotmail.com",
-                            EmailConfirmed = false,
-                            LockoutEnabled = false,
-                            NormalizedEmail = "ADMIN@HOTMAIL.COM",
-                            NormalizedUserName = "ADMIN@HOTMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEIWjUylj3oMvUkgOnjX/eGXi1uL2QAJDSdgaPoK3zVndHQV8y4DPjsEuxNHmlBucGg==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "e1e08107-f2f1-42f6-b819-af5489ead0da",
-                            TwoFactorEnabled = false,
-                            UserName = "admin@hotmail.com"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -213,20 +198,6 @@ namespace GestionRecetas.Migrations
                         .HasFilter("[NormalizedName] IS NOT NULL");
 
                     b.ToTable("AspNetRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "5a62ede7-8beb-4a2e-b818-9c376b9690ef",
-                            Name = "Administrador",
-                            NormalizedName = "ADMINISTRADOR"
-                        },
-                        new
-                        {
-                            Id = "f1e7d475-0ad5-40ae-bfb9-9ea47a6c4b82",
-                            Name = "Usuario",
-                            NormalizedName = "USUARIO"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -314,13 +285,6 @@ namespace GestionRecetas.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("AspNetUserRoles", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = "ab3e9cda-d416-4857-a684-b1e9b9ca1dea",
-                            RoleId = "5a62ede7-8beb-4a2e-b818-9c376b9690ef"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
