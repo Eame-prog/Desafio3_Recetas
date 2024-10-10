@@ -25,7 +25,7 @@ namespace GestionRecetas.Models.Seed
                     },
                     new Receta
                     {
-                        ID = 1,
+                        ID = 3,
                         NombreReceta = "Sopa de Tomate",
                         DescripcionReceta = "Sopa ligera de tomate con albahaca",
                         TiempoReceta = "40 minutos"

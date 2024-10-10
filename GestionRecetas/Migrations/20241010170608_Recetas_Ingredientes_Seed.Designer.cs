@@ -4,6 +4,7 @@ using GestionRecetas.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GestionRecetas.Migrations
 {
     [DbContext(typeof(RecetasDBContext))]
-    partial class RecetasDBContextModelSnapshot : ModelSnapshot
+    [Migration("20241010170608_Recetas_Ingredientes_Seed")]
+    partial class Recetas_Ingredientes_Seed
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -151,71 +154,6 @@ namespace GestionRecetas.Migrations
                     b.HasIndex("RecetaId");
 
                     b.ToTable("PasosPreparaciones");
-
-                    b.HasData(
-                        new
-                        {
-                            ID = 1,
-                            Descripcion = "Lavar la lechuga romana y cortarla en trozos",
-                            Orden = 1,
-                            RecetaId = 1
-                        },
-                        new
-                        {
-                            ID = 2,
-                            Descripcion = "Asar el pollo a la parrilla y cortarlo en tiras",
-                            Orden = 2,
-                            RecetaId = 1
-                        },
-                        new
-                        {
-                            ID = 3,
-                            Descripcion = "Mezclar la lechuga, el pollo y el aderezo césar",
-                            Orden = 3,
-                            RecetaId = 1
-                        },
-                        new
-                        {
-                            ID = 4,
-                            Descripcion = "Cocinar la pasta en agua hirvindo con sal",
-                            Orden = 1,
-                            RecetaId = 2
-                        },
-                        new
-                        {
-                            ID = 5,
-                            Descripcion = "Mezclar el huevo, la crema y el queso parmesano",
-                            Orden = 2,
-                            RecetaId = 2
-                        },
-                        new
-                        {
-                            ID = 6,
-                            Descripcion = "Añadir la mezcla a la pasta caliente",
-                            Orden = 3,
-                            RecetaId = 2
-                        },
-                        new
-                        {
-                            ID = 7,
-                            Descripcion = "Cortar los tomates y hervirlos hasta que se ablanden",
-                            Orden = 1,
-                            RecetaId = 3
-                        },
-                        new
-                        {
-                            ID = 8,
-                            Descripcion = "Licuar los tomates y agregar la albahaca",
-                            Orden = 2,
-                            RecetaId = 3
-                        },
-                        new
-                        {
-                            ID = 9,
-                            Descripcion = "Cocinar por 10 minutos más y servir caliente",
-                            Orden = 3,
-                            RecetaId = 3
-                        });
                 });
 
             modelBuilder.Entity("GestionRecetas.Models.Receta", b =>
@@ -334,17 +272,17 @@ namespace GestionRecetas.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "b8f911d2-89ab-41bb-a248-5af8d3b1cb05",
+                            Id = "2ecf5457-f480-4345-83c8-750ec345b975",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "9995eeda-c316-4f00-90e3-78767b2345ca",
+                            ConcurrencyStamp = "6a83fd59-825f-47af-972b-e159dcc3451b",
                             Email = "admin@hotmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@HOTMAIL.COM",
                             NormalizedUserName = "ADMIN@HOTMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAENpEjGUkPU8PSJcMStfDDCROFqd3u6eFJxNH6Bt8Dog1qOtAI9VVUX+ZhBTcq9i/GQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAENXbu72BS5koDskH4Kht18DdLZy0rTQyW+gqK4IfBar2C1hwBYLIx0QvHYVGMUxm/w==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "43913634-8e07-47a2-ba9a-b4353e160167",
+                            SecurityStamp = "97a60554-29ed-4091-80a0-a2574bfa4ffa",
                             TwoFactorEnabled = false,
                             UserName = "admin@hotmail.com"
                         });
@@ -379,13 +317,13 @@ namespace GestionRecetas.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "f92f5a1b-2ff5-4789-b153-5a6182aa223c",
+                            Id = "e2e0fe16-1de1-4f5f-9759-d51f0b89b8ed",
                             Name = "Administrador",
                             NormalizedName = "ADMINISTRADOR"
                         },
                         new
                         {
-                            Id = "371807ac-5c48-40b9-acef-d60a79714d2e",
+                            Id = "05ef5a82-534b-47de-b0ee-f4ce4d93d31d",
                             Name = "Usuario",
                             NormalizedName = "USUARIO"
                         });
@@ -480,8 +418,8 @@ namespace GestionRecetas.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "b8f911d2-89ab-41bb-a248-5af8d3b1cb05",
-                            RoleId = "f92f5a1b-2ff5-4789-b153-5a6182aa223c"
+                            UserId = "2ecf5457-f480-4345-83c8-750ec345b975",
+                            RoleId = "e2e0fe16-1de1-4f5f-9759-d51f0b89b8ed"
                         });
                 });
 

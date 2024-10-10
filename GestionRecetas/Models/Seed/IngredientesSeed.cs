@@ -8,10 +8,11 @@ namespace GestionRecetas.Models.Seed
         public void Configure(EntityTypeBuilder<Ingrediente> builder)
         {
             builder.HasData(
-                
+
                     //Ingredientes de receta 1
                     new Ingrediente
                     {
+                        ID = 1,
                         NombreIngrediente = "Lechuga romana",
                         Cantidad = "1",
                         Unidad = "Unidad",
@@ -19,6 +20,7 @@ namespace GestionRecetas.Models.Seed
                     },
                     new Ingrediente
                     {
+                        ID = 2,
                         NombreIngrediente = "Pollo a la parrilla",
                         Cantidad = "200",
                         Unidad = "Gramos",
@@ -26,6 +28,7 @@ namespace GestionRecetas.Models.Seed
                     },
                     new Ingrediente
                     {
+                        ID = 3,
                         NombreIngrediente = "Aderezo César",
                         Cantidad = "50",
                         Unidad = "Mililitros",
@@ -34,6 +37,7 @@ namespace GestionRecetas.Models.Seed
                     //Ingredientes de receta 2
                     new Ingrediente
                     {
+                        ID = 4,
                         NombreIngrediente = "Pasta espagheti",
                         Cantidad = "250",
                         Unidad = "Gramos",
@@ -41,6 +45,7 @@ namespace GestionRecetas.Models.Seed
                     },
                     new Ingrediente
                     {
+                        ID = 5,
                         NombreIngrediente = "Crema de leche",
                         Cantidad = "100",
                         Unidad = "Mililitros",
@@ -48,6 +53,7 @@ namespace GestionRecetas.Models.Seed
                     },
                     new Ingrediente
                     {
+                        ID = 6,
                         NombreIngrediente = "Huevo",
                         Cantidad = "1",
                         Unidad = "Unidad",
@@ -55,6 +61,7 @@ namespace GestionRecetas.Models.Seed
                     },
                     new Ingrediente
                     {
+                        ID = 7,
                         NombreIngrediente = "Queso parmesano",
                         Cantidad = "50",
                         Unidad = "Gramos",
@@ -63,6 +70,7 @@ namespace GestionRecetas.Models.Seed
                     //Ingredientes de receta 3
                     new Ingrediente
                     {
+                        ID = 8,
                         NombreIngrediente = "Tomates frescos",
                         Cantidad = "500",
                         Unidad = "Gramos",
@@ -70,6 +78,7 @@ namespace GestionRecetas.Models.Seed
                     },
                     new Ingrediente
                     {
+                        ID = 9,
                         NombreIngrediente = "Albahaca",
                         Cantidad = "5",
                         Unidad = "Hojas",
@@ -77,7 +86,7 @@ namespace GestionRecetas.Models.Seed
                     }
                 );
         }
-        
+
 
     }
 }

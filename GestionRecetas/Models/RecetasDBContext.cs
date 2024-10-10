@@ -19,6 +19,8 @@ namespace GestionRecetas.Models
         {
             modelbuilder.SeedUsuario_Roles();
             modelbuilder.ApplyConfiguration(new RecetasSeed());
+            modelbuilder.ApplyConfiguration(new IngredientesSeed());
+            modelbuilder.ApplyConfiguration(new PasosPreparacionSeed());
             base.OnModelCreating(modelbuilder);
         }
     }

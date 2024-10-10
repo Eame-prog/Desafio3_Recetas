@@ -4,6 +4,7 @@ using GestionRecetas.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GestionRecetas.Migrations
 {
     [DbContext(typeof(RecetasDBContext))]
-    partial class RecetasDBContextModelSnapshot : ModelSnapshot
+    [Migration("20241010173353_Pasos_Preparacion_Seed")]
+    partial class Pasos_Preparacion_Seed
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
