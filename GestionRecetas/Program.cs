@@ -1,4 +1,4 @@
-
+using Microsoft.AspNetCore.Identity;
 using GestionRecetas.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,6 +9,21 @@ namespace GestionRecetas
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+
+            builder.Services.AddAuthorization(options =>
+            {
+                options.AddPolicy("UsuarioRolAsignado", policy =>
+                    policy.RequireRole("Administrador", "Usuario"));
+            });
+
+            builder.Services.AddAuthorization();
+            builder.Services.AddAuthentication()
+                .AddCookie(IdentityConstants.ApplicationScheme);
+
+            builder.Services.AddIdentityCore<Usuario>()
+                .AddRoles<IdentityRole>()
+                .AddEntityFrameworkStores<RecetasDBContext>()
+                .AddApiEndpoints();
 
             builder.Services.AddDbContext<RecetasDBContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -31,10 +46,12 @@ namespace GestionRecetas
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
-
             app.MapControllers();
+
+            app.MapIdentityApi<Usuario>();
 
             app.Run();
         }

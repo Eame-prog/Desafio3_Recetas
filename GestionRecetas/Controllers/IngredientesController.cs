@@ -6,11 +6,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using GestionRecetas.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GestionRecetas.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Policy = "UsuarioRolAsignado")]
     public class IngredientesController : ControllerBase
     {
         private readonly RecetasDBContext _context;
@@ -44,6 +46,7 @@ namespace GestionRecetas.Controllers
         // PUT: api/Ingredientes/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
+        [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> PutIngrediente(int id, Ingrediente ingrediente)
         {
             var receta = await _context.Recetas.FindAsync(ingrediente.RecetaId);
@@ -101,6 +104,7 @@ namespace GestionRecetas.Controllers
 
         // DELETE: api/Ingredientes/5
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> DeleteIngrediente(int id)
         {
             var ingrediente = await _context.Ingredientes.FindAsync(id);

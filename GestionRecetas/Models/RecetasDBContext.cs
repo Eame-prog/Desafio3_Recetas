@@ -1,8 +1,10 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using GestionRecetas.Models.Seed;
 
 namespace GestionRecetas.Models
 {
-    public class RecetasDBContext : DbContext
+    public class RecetasDBContext : IdentityDbContext<Usuario>
     {
         public RecetasDBContext(DbContextOptions<RecetasDBContext> options)
             : base(options) 
@@ -12,5 +14,11 @@ namespace GestionRecetas.Models
         public DbSet<Receta> Recetas { get; set; }
         public DbSet<Ingrediente> Ingredientes { get; set; }
         public DbSet<PasosPreparacion> PasosPreparaciones { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelbuilder)
+        {
+            modelbuilder.SeedUsuario_Roles();
+            base.OnModelCreating(modelbuilder);
+        }
     }
 }
